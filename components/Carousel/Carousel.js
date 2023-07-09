@@ -8,28 +8,32 @@ const data = {
     {
       title: "Find me on Mastodon",
       link: "https://indieweb.social/@kendalmintcode",
-      imageUrl: "https://placeimg.com/300/300/any",
+      imageUrl:
+        "https://images.pexels.com/photos/132549/pexels-photo-132549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       title: "Welcome to Ark Labs",
       link: "https://ark-labs.co.uk",
-      imageUrl: "https://placeimg.com/300/300/animals",
+      imageUrl:
+        "https://images.pexels.com/photos/1230397/pexels-photo-1230397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       title: "Some sort of third title",
       link: "https://indieweb.social/@kendalmintcode",
-      imageUrl: "https://placeimg.com/300/300/architecture",
+      imageUrl:
+        "https://images.pexels.com/photos/12154990/pexels-photo-12154990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
 
     {
       title: "Super item number the last",
       link: "https://indieweb.social/@kendalmintcode",
-      imageUrl: "https://placeimg.com/300/300/tech",
+      imageUrl:
+        "https://images.pexels.com/photos/355938/pexels-photo-355938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
   ],
 };
 
-const Carousel = () => {
+const Carousel = ({ resources }) => {
   const maxScrollWidth = useRef(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef(null);
@@ -77,9 +81,6 @@ const Carousel = () => {
 
   return (
     <div className="carousel my-12 mx-auto w-full">
-      <h2 className="text-4xl leading-8 font-semibold mb-12 text-slate-700">
-        Our epic carousel
-      </h2>
       <div className="relative overflow-hidden">
         <div className="flex justify-between absolute top left w-full h-full">
           <button

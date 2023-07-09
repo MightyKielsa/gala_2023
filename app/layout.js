@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`absolute top-0 bottom-0 left-0 right-0 ${inter.className}`}
+        className={`absolute top-0 bottom-0 left-0 right-0 ${inter.className} font-mono bg-teal-50`}
       >
         {children}
       </body>
